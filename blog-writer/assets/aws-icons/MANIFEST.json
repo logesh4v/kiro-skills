@@ -1,0 +1,386 @@
+[
+ {
+  "file": "Arch_AWS-Amplify_64.svg",
+  "service": "AWS Amplify",
+  "category": "Mobile",
+  "color": "#DD344C"
+ },
+ {
+  "file": "Arch_AWS-App-Runner_64.svg",
+  "service": "AWS App Runner",
+  "category": "Compute",
+  "color": "#ED7100"
+ },
+ {
+  "file": "Arch_AWS-AppSync_64.svg",
+  "service": "AWS AppSync",
+  "category": "Application-Integration",
+  "color": "#E7157B"
+ },
+ {
+  "file": "Arch_AWS-Batch_64.svg",
+  "service": "AWS Batch",
+  "category": "Compute",
+  "color": "#ED7100"
+ },
+ {
+  "file": "Arch_AWS-Certificate-Manager_64.svg",
+  "service": "AWS Certificate Manager",
+  "category": "Security-Identity-Compliance",
+  "color": "#DD344C"
+ },
+ {
+  "file": "Arch_AWS-Cloud-Development-Kit_64.svg",
+  "service": "AWS Cloud Development Kit",
+  "category": "Developer-Tools",
+  "color": "#C925D1"
+ },
+ {
+  "file": "Arch_AWS-CloudFormation_64.svg",
+  "service": "AWS CloudFormation",
+  "category": "Management-Governance",
+  "color": "#E7157B"
+ },
+ {
+  "file": "Arch_AWS-CloudTrail_64.svg",
+  "service": "AWS CloudTrail",
+  "category": "Management-Governance",
+  "color": "#E7157B"
+ },
+ {
+  "file": "Arch_AWS-Config_64.svg",
+  "service": "AWS Config",
+  "category": "Management-Governance",
+  "color": "#E7157B"
+ },
+ {
+  "file": "Arch_AWS-Fargate_64.svg",
+  "service": "AWS Fargate",
+  "category": "Compute",
+  "color": "#ED7100"
+ },
+ {
+  "file": "Arch_AWS-Glue_64.svg",
+  "service": "AWS Glue",
+  "category": "Analytics",
+  "color": "#8C4FFF"
+ },
+ {
+  "file": "Arch_AWS-Identity-and-Access-Management_64.svg",
+  "service": "AWS Identity and Access Management",
+  "category": "Security-Identity-Compliance",
+  "color": "#DD344C"
+ },
+ {
+  "file": "Arch_AWS-Key-Management-Service_64.svg",
+  "service": "AWS Key Management Service",
+  "category": "Security-Identity-Compliance",
+  "color": "#DD344C"
+ },
+ {
+  "file": "Arch_AWS-Lambda_64.svg",
+  "service": "AWS Lambda",
+  "category": "Compute",
+  "color": "#ED7100"
+ },
+ {
+  "file": "Arch_AWS-PrivateLink_64.svg",
+  "service": "AWS PrivateLink",
+  "category": "Networking-Content-Delivery",
+  "color": "#8C4FFF"
+ },
+ {
+  "file": "Arch_AWS-Secrets-Manager_64.svg",
+  "service": "AWS Secrets Manager",
+  "category": "Security-Identity-Compliance",
+  "color": "#DD344C"
+ },
+ {
+  "file": "Arch_AWS-Step-Functions_64.svg",
+  "service": "AWS Step Functions",
+  "category": "Application-Integration",
+  "color": "#E7157B"
+ },
+ {
+  "file": "Arch_AWS-Systems-Manager_64.svg",
+  "service": "AWS Systems Manager",
+  "category": "Management-Governance",
+  "color": "#E7157B"
+ },
+ {
+  "file": "Arch_AWS-WAF_64.svg",
+  "service": "AWS WAF",
+  "category": "Security-Identity-Compliance",
+  "color": "#DD344C"
+ },
+ {
+  "file": "Arch_AWS-X-Ray_64.svg",
+  "service": "AWS X Ray",
+  "category": "Developer-Tools",
+  "color": "#C925D1"
+ },
+ {
+  "file": "Arch_Amazon-API-Gateway_64.svg",
+  "service": "Amazon API Gateway",
+  "category": "Networking-Content-Delivery",
+  "color": "#8C4FFF"
+ },
+ {
+  "file": "Arch_Amazon-Athena_64.svg",
+  "service": "Amazon Athena",
+  "category": "Analytics",
+  "color": "#8C4FFF"
+ },
+ {
+  "file": "Arch_Amazon-Aurora_64.svg",
+  "service": "Amazon Aurora",
+  "category": "Database",
+  "color": "#C925D1"
+ },
+ {
+  "file": "Arch_Amazon-Bedrock-AgentCore_64.svg",
+  "service": "Amazon Bedrock AgentCore",
+  "category": "Non-AWS",
+  "color": "#01A88D"
+ },
+ {
+  "file": "Arch_Amazon-Bedrock_64.svg",
+  "service": "Amazon Bedrock",
+  "category": "Machine-Learning",
+  "color": "#01A88D"
+ },
+ {
+  "file": "Arch_Amazon-CloudFront_64.svg",
+  "service": "Amazon CloudFront",
+  "category": "Networking-Content-Delivery",
+  "color": "#8C4FFF"
+ },
+ {
+  "file": "Arch_Amazon-CloudWatch_64.svg",
+  "service": "Amazon CloudWatch",
+  "category": "Management-Governance",
+  "color": "#E7157B"
+ },
+ {
+  "file": "Arch_Amazon-Cognito_64.svg",
+  "service": "Amazon Cognito",
+  "category": "Security-Identity-Compliance",
+  "color": "#DD344C"
+ },
+ {
+  "file": "Arch_Amazon-Comprehend_64.svg",
+  "service": "Amazon Comprehend",
+  "category": "Machine-Learning",
+  "color": "#01A88D"
+ },
+ {
+  "file": "Arch_Amazon-Data-Firehose_64.svg",
+  "service": "Amazon Data Firehose",
+  "category": "Analytics",
+  "color": "#8C4FFF"
+ },
+ {
+  "file": "Arch_Amazon-DocumentDB_64.svg",
+  "service": "Amazon DocumentDB",
+  "category": "Database",
+  "color": "#C925D1"
+ },
+ {
+  "file": "Arch_Amazon-DynamoDB_64.svg",
+  "service": "Amazon DynamoDB",
+  "category": "Database",
+  "color": "#C925D1"
+ },
+ {
+  "file": "Arch_Amazon-EC2_64.svg",
+  "service": "Amazon EC2",
+  "category": "Compute",
+  "color": "#ED7100"
+ },
+ {
+  "file": "Arch_Amazon-EFS_64.svg",
+  "service": "Amazon EFS",
+  "category": "Storage",
+  "color": "#7AA116"
+ },
+ {
+  "file": "Arch_Amazon-ElastiCache_64.svg",
+  "service": "Amazon ElastiCache",
+  "category": "Database",
+  "color": "#C925D1"
+ },
+ {
+  "file": "Arch_Amazon-Elastic-Container-Registry_64.svg",
+  "service": "Amazon Elastic Container Registry",
+  "category": "Compute",
+  "color": "#ED7100"
+ },
+ {
+  "file": "Arch_Amazon-Elastic-Container-Service_64.svg",
+  "service": "Amazon Elastic Container Service",
+  "category": "Compute",
+  "color": "#ED7100"
+ },
+ {
+  "file": "Arch_Amazon-Elastic-Kubernetes-Service_64.svg",
+  "service": "Amazon Elastic Kubernetes Service",
+  "category": "Compute",
+  "color": "#ED7100"
+ },
+ {
+  "file": "Arch_Amazon-EventBridge_64.svg",
+  "service": "Amazon EventBridge",
+  "category": "Application-Integration",
+  "color": "#E7157B"
+ },
+ {
+  "file": "Arch_Amazon-GuardDuty_64.svg",
+  "service": "Amazon GuardDuty",
+  "category": "Security-Identity-Compliance",
+  "color": "#DD344C"
+ },
+ {
+  "file": "Arch_Amazon-Inspector_64.svg",
+  "service": "Amazon Inspector",
+  "category": "Security-Identity-Compliance",
+  "color": "#DD344C"
+ },
+ {
+  "file": "Arch_Amazon-Kendra_64.svg",
+  "service": "Amazon Kendra",
+  "category": "Machine-Learning",
+  "color": "#01A88D"
+ },
+ {
+  "file": "Arch_Amazon-Kinesis_64.svg",
+  "service": "Amazon Kinesis",
+  "category": "Analytics",
+  "color": "#8C4FFF"
+ },
+ {
+  "file": "Arch_Amazon-Lex_64.svg",
+  "service": "Amazon Lex",
+  "category": "Machine-Learning",
+  "color": "#01A88D"
+ },
+ {
+  "file": "Arch_Amazon-Managed-Streaming-for-Apache-Kafka_64.svg",
+  "service": "Amazon Managed Streaming for Apache Kafka",
+  "category": "Analytics",
+  "color": "#8C4FFF"
+ },
+ {
+  "file": "Arch_Amazon-Neptune_64.svg",
+  "service": "Amazon Neptune",
+  "category": "Database",
+  "color": "#C925D1"
+ },
+ {
+  "file": "Arch_Amazon-OpenSearch-Service_64.svg",
+  "service": "Amazon OpenSearch Service",
+  "category": "Analytics",
+  "color": "#8C4FFF"
+ },
+ {
+  "file": "Arch_Amazon-Polly_64.svg",
+  "service": "Amazon Polly",
+  "category": "Machine-Learning",
+  "color": "#01A88D"
+ },
+ {
+  "file": "Arch_Amazon-Q_64.svg",
+  "service": "Amazon Q",
+  "category": "Machine-Learning",
+  "color": "#01A88D"
+ },
+ {
+  "file": "Arch_Amazon-RDS_64.svg",
+  "service": "Amazon RDS",
+  "category": "Database",
+  "color": "#C925D1"
+ },
+ {
+  "file": "Arch_Amazon-Redshift_64.svg",
+  "service": "Amazon Redshift",
+  "category": "Analytics",
+  "color": "#8C4FFF"
+ },
+ {
+  "file": "Arch_Amazon-Rekognition_64.svg",
+  "service": "Amazon Rekognition",
+  "category": "Machine-Learning",
+  "color": "#01A88D"
+ },
+ {
+  "file": "Arch_Amazon-Route-53_64.svg",
+  "service": "Amazon Route 53",
+  "category": "Networking-Content-Delivery",
+  "color": "#8C4FFF"
+ },
+ {
+  "file": "Arch_Amazon-SageMaker-AI_64.svg",
+  "service": "Amazon SageMaker AI",
+  "category": "Machine-Learning",
+  "color": "#01A88D"
+ },
+ {
+  "file": "Arch_Amazon-Simple-Email-Service_64.svg",
+  "service": "Amazon Simple Email Service",
+  "category": "Business-Applications",
+  "color": "#DD344C"
+ },
+ {
+  "file": "Arch_Amazon-Simple-Notification-Service_64.svg",
+  "service": "Amazon Simple Notification Service",
+  "category": "Application-Integration",
+  "color": "#E7157B"
+ },
+ {
+  "file": "Arch_Amazon-Simple-Queue-Service_64.svg",
+  "service": "Amazon Simple Queue Service",
+  "category": "Application-Integration",
+  "color": "#E7157B"
+ },
+ {
+  "file": "Arch_Amazon-Simple-Storage-Service_64.svg",
+  "service": "Amazon Simple Storage Service",
+  "category": "Storage",
+  "color": "#7AA116"
+ },
+ {
+  "file": "Arch_Amazon-Textract_64.svg",
+  "service": "Amazon Textract",
+  "category": "Machine-Learning",
+  "color": "#01A88D"
+ },
+ {
+  "file": "Arch_Amazon-Transcribe_64.svg",
+  "service": "Amazon Transcribe",
+  "category": "Machine-Learning",
+  "color": "#01A88D"
+ },
+ {
+  "file": "Arch_Amazon-Verified-Permissions_64.svg",
+  "service": "Amazon Verified Permissions",
+  "category": "Security-Identity-Compliance",
+  "color": "#DD344C"
+ },
+ {
+  "file": "Arch_Amazon-Virtual-Private-Cloud_64.svg",
+  "service": "Amazon Virtual Private Cloud",
+  "category": "Networking-Content-Delivery",
+  "color": "#8C4FFF"
+ },
+ {
+  "file": "Arch_Elastic-Load-Balancing_64.svg",
+  "service": "Elastic Load Balancing",
+  "category": "Networking-Content-Delivery",
+  "color": "#8C4FFF"
+ },
+ {
+  "file": "strands-agents-mark.svg",
+  "service": "Strands Agents",
+  "category": "Non-AWS",
+  "color": "#00cc60"
+ }
+]
