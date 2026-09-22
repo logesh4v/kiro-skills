@@ -4,7 +4,7 @@ description: Write a publishable technical blog post about something built on AW
 license: Apache-2.0
 metadata:
   author: ShellKode
-  version: 1.0.0
+  version: 0.1.0
   genres: builder-center, partner-apn
 ---
 
