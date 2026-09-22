@@ -58,7 +58,7 @@ def main():
             rep(j != -1 and j <= i, f"full name first: {s}")
     for ac in ACR:
         if re.search(r"\b%s\b" % ac, flat):
-            rep(re.search(r"\(%s\)" % ac, flat) is not None, f"acronym expanded: {ac}")
+            rep(re.search(r"\((AWS |Amazon )?%s\)" % ac, flat) is not None, f"acronym expanded: {ac}")
     v = len(re.findall(r"\[VERIFY[^\]]*\]", raw))
     rep(v == 0, f"[VERIFY] left: {v}")
     figs, caps = re.findall(r"!\[[^\]]*\]\([^)]+\)", raw), re.findall(r"\*Figure \d+:", raw)
