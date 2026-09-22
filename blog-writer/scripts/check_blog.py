@@ -50,7 +50,7 @@ def main():
         h = [p for p in FUD if re.search(r"\b%s\b" % p, low)]
         rep(not h, "FUD words" + (": " + ", ".join(h) if h else ""))
         rep("shared responsibility" in low, "shared-responsibility line")
-        rep(not re.search(r"\b(I|we) (built|set out|hit)\b", flat), "no first person")
+        rep(not re.search(r"\b([Ii]|[Ww]e) (built|set out|hit)\b", flat), "no first person")
     rep("the cloud" not in low.replace("the aws cloud", ""), "says 'the AWS Cloud'")
     for s, f in FULL.items():
         i, j = flat.find(s), flat.find(f)

@@ -110,6 +110,13 @@ Pull requests and issues are welcome — a wrong rule, a missing icon, a
 structure that did not fit your post, a lint false positive. Include the
 input that broke it (a redacted paragraph or the service name is enough).
 
+**How a change lands.** Open a PR against `main`. CI runs
+`tests/validate_skill.py` (skill structure, script size, manifest, leak scan),
+`tests/test_check_blog.py` (linter behaviour on the fixtures), the installer
+on Linux and macOS, and shellcheck. `main` is protected: CI must be green and
+the repo owner (see `.github/CODEOWNERS`) must approve before merge. Run the
+two test scripts locally first — they are stdlib Python and take a second.
+
 **Adding a skill:** one folder per skill, `SKILL.md` with `name` (= folder
 name) and `description` (≤1,024 chars — it is the trigger, so write it the
 way people ask). Keep `SKILL.md` to the procedure; put long material in
