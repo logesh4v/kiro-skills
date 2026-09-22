@@ -1,0 +1,56 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: validate skills
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"   # floor declared in README; scripts are stdlib only
+      - name: Skill structure, scripts, manifest, leak scan
+        run: python3 tests/validate_skill.py
+      - name: check_blog.py behaviour
+        run: python3 tests/test_check_blog.py
+
+  install:
+    name: install.sh smoke (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install into a throwaway home
+        run: |
+          set -euo pipefail
+          FAKE="$RUNNER_TEMP/fakehome"
+          KIRO_HOME="$FAKE/.kiro" KIROCREW_HOME="$FAKE/.kiro/crew" ./install.sh
+          test -L "$FAKE/.kiro/skills/blog-writer"
+          test -L "$FAKE/.kiro/crew/skills/blog-writer"
+          head -2 "$FAKE/.kiro/skills/blog-writer/SKILL.md" | grep -q '^name: blog-writer$'
+          # re-run must be idempotent
+          KIRO_HOME="$FAKE/.kiro" KIROCREW_HOME="$FAKE/.kiro/crew" ./install.sh >/dev/null
+          # --copy mode
+          KIRO_HOME="$FAKE/copy/.kiro" KIROCREW_HOME="$FAKE/copy/.kiro/crew" ./install.sh --copy
+          test -d "$FAKE/copy/.kiro/skills/blog-writer" && test ! -L "$FAKE/copy/.kiro/skills/blog-writer"
+          # --workspace mode
+          mkdir -p "$RUNNER_TEMP/proj" && cd "$RUNNER_TEMP/proj"
+          KIRO_HOME="$FAKE/.kiro" KIROCREW_HOME="$FAKE/.kiro/crew" "$GITHUB_WORKSPACE/install.sh" --workspace
+          test -L .kiro/skills/blog-writer
+
+  shellcheck:
+    name: shellcheck install.sh
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: shellcheck -S warning install.sh
