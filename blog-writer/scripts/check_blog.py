@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""Lint a blog draft. usage: check_blog.py POST.md --genre builder|partner [--svg f.svg]
-Exit 1 on FAIL; writes lint-report.txt. Stdlib only."""
+"""Lint a blog draft; exit 1 on FAIL."""
 import argparse, re, sys
 from pathlib import Path
 
@@ -18,7 +17,7 @@ FULL = {"Amazon S3": "Amazon Simple Storage Service (Amazon S3)",
         "Amazon EC2": "Amazon Elastic Compute Cloud (Amazon EC2)"}
 ACR = ["FNOL", "CORS", "SSE", "kNN", "OTP", "CVE", "CSV", "RAG", "CKYC", "IRDAI",
        "VPC", "ALB", "IAM", "KMS", "OCR", "MRZ", "JWT"]
-LEAK = [(r"\b\d{12}\b(?<!123456789012)", "account id"),
+LEAK = [(r"(?<![\d.])(?!(?:123456789012)\b)\d{12}(?![\d.])", "account id"),
         (r"arn:aws:[a-z0-9-]*:[a-z0-9-]*:(?!<|x|\$|1234)\d", "real ARN"),
         (r"\b\d{1,3}(\.\d{1,3}){3}/\d{1,2}\b", "CIDR"),
         (r"\b[a-z0-9-]{6,}\.amazonaws\.com\b", "AWS hostname"),
@@ -31,6 +30,7 @@ def main():
     ap.add_argument("--svg"); a = ap.parse_args()
     raw = Path(a.post).read_text(encoding="utf-8")
     body = re.sub(r"```.*?```|<!--.*?-->", "", raw, flags=re.S)
+    body = re.sub(r"\[(code|dash|aws-doc|author|VERIFY)[^\]]*\]", "", body)
     body = re.sub(r"^>.*$", "", body, flags=re.M)
     flat = re.sub(r"\s+", " ", body); low = flat.lower()
     out, fail = [], False

@@ -1,386 +1,1826 @@
 [
- {
-  "file": "Arch_AWS-Amplify_64.svg",
-  "service": "AWS Amplify",
-  "category": "Mobile",
-  "color": "#DD344C"
- },
- {
-  "file": "Arch_AWS-App-Runner_64.svg",
-  "service": "AWS App Runner",
-  "category": "Compute",
-  "color": "#ED7100"
- },
- {
-  "file": "Arch_AWS-AppSync_64.svg",
-  "service": "AWS AppSync",
-  "category": "Application-Integration",
-  "color": "#E7157B"
- },
- {
-  "file": "Arch_AWS-Batch_64.svg",
-  "service": "AWS Batch",
-  "category": "Compute",
-  "color": "#ED7100"
- },
- {
-  "file": "Arch_AWS-Certificate-Manager_64.svg",
-  "service": "AWS Certificate Manager",
-  "category": "Security-Identity-Compliance",
-  "color": "#DD344C"
- },
- {
-  "file": "Arch_AWS-Cloud-Development-Kit_64.svg",
-  "service": "AWS Cloud Development Kit",
-  "category": "Developer-Tools",
-  "color": "#C925D1"
- },
- {
-  "file": "Arch_AWS-CloudFormation_64.svg",
-  "service": "AWS CloudFormation",
-  "category": "Management-Governance",
-  "color": "#E7157B"
- },
- {
-  "file": "Arch_AWS-CloudTrail_64.svg",
-  "service": "AWS CloudTrail",
-  "category": "Management-Governance",
-  "color": "#E7157B"
- },
- {
-  "file": "Arch_AWS-Config_64.svg",
-  "service": "AWS Config",
-  "category": "Management-Governance",
-  "color": "#E7157B"
- },
- {
-  "file": "Arch_AWS-Fargate_64.svg",
-  "service": "AWS Fargate",
-  "category": "Compute",
-  "color": "#ED7100"
- },
- {
-  "file": "Arch_AWS-Glue_64.svg",
-  "service": "AWS Glue",
-  "category": "Analytics",
-  "color": "#8C4FFF"
- },
- {
-  "file": "Arch_AWS-Identity-and-Access-Management_64.svg",
-  "service": "AWS Identity and Access Management",
-  "category": "Security-Identity-Compliance",
-  "color": "#DD344C"
- },
- {
-  "file": "Arch_AWS-Key-Management-Service_64.svg",
-  "service": "AWS Key Management Service",
-  "category": "Security-Identity-Compliance",
-  "color": "#DD344C"
- },
- {
-  "file": "Arch_AWS-Lambda_64.svg",
-  "service": "AWS Lambda",
-  "category": "Compute",
-  "color": "#ED7100"
- },
- {
-  "file": "Arch_AWS-PrivateLink_64.svg",
-  "service": "AWS PrivateLink",
-  "category": "Networking-Content-Delivery",
-  "color": "#8C4FFF"
- },
- {
-  "file": "Arch_AWS-Secrets-Manager_64.svg",
-  "service": "AWS Secrets Manager",
-  "category": "Security-Identity-Compliance",
-  "color": "#DD344C"
- },
- {
-  "file": "Arch_AWS-Step-Functions_64.svg",
-  "service": "AWS Step Functions",
-  "category": "Application-Integration",
-  "color": "#E7157B"
- },
- {
-  "file": "Arch_AWS-Systems-Manager_64.svg",
-  "service": "AWS Systems Manager",
-  "category": "Management-Governance",
-  "color": "#E7157B"
- },
- {
-  "file": "Arch_AWS-WAF_64.svg",
-  "service": "AWS WAF",
-  "category": "Security-Identity-Compliance",
-  "color": "#DD344C"
- },
- {
-  "file": "Arch_AWS-X-Ray_64.svg",
-  "service": "AWS X Ray",
-  "category": "Developer-Tools",
-  "color": "#C925D1"
- },
- {
-  "file": "Arch_Amazon-API-Gateway_64.svg",
-  "service": "Amazon API Gateway",
-  "category": "Networking-Content-Delivery",
-  "color": "#8C4FFF"
- },
- {
-  "file": "Arch_Amazon-Athena_64.svg",
-  "service": "Amazon Athena",
-  "category": "Analytics",
-  "color": "#8C4FFF"
- },
- {
-  "file": "Arch_Amazon-Aurora_64.svg",
-  "service": "Amazon Aurora",
-  "category": "Database",
-  "color": "#C925D1"
- },
- {
-  "file": "Arch_Amazon-Bedrock-AgentCore_64.svg",
-  "service": "Amazon Bedrock AgentCore",
-  "category": "Non-AWS",
-  "color": "#01A88D"
- },
- {
-  "file": "Arch_Amazon-Bedrock_64.svg",
-  "service": "Amazon Bedrock",
-  "category": "Machine-Learning",
-  "color": "#01A88D"
- },
- {
-  "file": "Arch_Amazon-CloudFront_64.svg",
-  "service": "Amazon CloudFront",
-  "category": "Networking-Content-Delivery",
-  "color": "#8C4FFF"
- },
- {
-  "file": "Arch_Amazon-CloudWatch_64.svg",
-  "service": "Amazon CloudWatch",
-  "category": "Management-Governance",
-  "color": "#E7157B"
- },
- {
-  "file": "Arch_Amazon-Cognito_64.svg",
-  "service": "Amazon Cognito",
-  "category": "Security-Identity-Compliance",
-  "color": "#DD344C"
- },
- {
-  "file": "Arch_Amazon-Comprehend_64.svg",
-  "service": "Amazon Comprehend",
-  "category": "Machine-Learning",
-  "color": "#01A88D"
- },
- {
-  "file": "Arch_Amazon-Data-Firehose_64.svg",
-  "service": "Amazon Data Firehose",
-  "category": "Analytics",
-  "color": "#8C4FFF"
- },
- {
-  "file": "Arch_Amazon-DocumentDB_64.svg",
-  "service": "Amazon DocumentDB",
-  "category": "Database",
-  "color": "#C925D1"
- },
- {
-  "file": "Arch_Amazon-DynamoDB_64.svg",
-  "service": "Amazon DynamoDB",
-  "category": "Database",
-  "color": "#C925D1"
- },
- {
-  "file": "Arch_Amazon-EC2_64.svg",
-  "service": "Amazon EC2",
-  "category": "Compute",
-  "color": "#ED7100"
- },
- {
-  "file": "Arch_Amazon-EFS_64.svg",
-  "service": "Amazon EFS",
-  "category": "Storage",
-  "color": "#7AA116"
- },
- {
-  "file": "Arch_Amazon-ElastiCache_64.svg",
-  "service": "Amazon ElastiCache",
-  "category": "Database",
-  "color": "#C925D1"
- },
- {
-  "file": "Arch_Amazon-Elastic-Container-Registry_64.svg",
-  "service": "Amazon Elastic Container Registry",
-  "category": "Compute",
-  "color": "#ED7100"
- },
- {
-  "file": "Arch_Amazon-Elastic-Container-Service_64.svg",
-  "service": "Amazon Elastic Container Service",
-  "category": "Compute",
-  "color": "#ED7100"
- },
- {
-  "file": "Arch_Amazon-Elastic-Kubernetes-Service_64.svg",
-  "service": "Amazon Elastic Kubernetes Service",
-  "category": "Compute",
-  "color": "#ED7100"
- },
- {
-  "file": "Arch_Amazon-EventBridge_64.svg",
-  "service": "Amazon EventBridge",
-  "category": "Application-Integration",
-  "color": "#E7157B"
- },
- {
-  "file": "Arch_Amazon-GuardDuty_64.svg",
-  "service": "Amazon GuardDuty",
-  "category": "Security-Identity-Compliance",
-  "color": "#DD344C"
- },
- {
-  "file": "Arch_Amazon-Inspector_64.svg",
-  "service": "Amazon Inspector",
-  "category": "Security-Identity-Compliance",
-  "color": "#DD344C"
- },
- {
-  "file": "Arch_Amazon-Kendra_64.svg",
-  "service": "Amazon Kendra",
-  "category": "Machine-Learning",
-  "color": "#01A88D"
- },
- {
-  "file": "Arch_Amazon-Kinesis_64.svg",
-  "service": "Amazon Kinesis",
-  "category": "Analytics",
-  "color": "#8C4FFF"
- },
- {
-  "file": "Arch_Amazon-Lex_64.svg",
-  "service": "Amazon Lex",
-  "category": "Machine-Learning",
-  "color": "#01A88D"
- },
- {
-  "file": "Arch_Amazon-Managed-Streaming-for-Apache-Kafka_64.svg",
-  "service": "Amazon Managed Streaming for Apache Kafka",
-  "category": "Analytics",
-  "color": "#8C4FFF"
- },
- {
-  "file": "Arch_Amazon-Neptune_64.svg",
-  "service": "Amazon Neptune",
-  "category": "Database",
-  "color": "#C925D1"
- },
- {
-  "file": "Arch_Amazon-OpenSearch-Service_64.svg",
-  "service": "Amazon OpenSearch Service",
-  "category": "Analytics",
-  "color": "#8C4FFF"
- },
- {
-  "file": "Arch_Amazon-Polly_64.svg",
-  "service": "Amazon Polly",
-  "category": "Machine-Learning",
-  "color": "#01A88D"
- },
- {
-  "file": "Arch_Amazon-Q_64.svg",
-  "service": "Amazon Q",
-  "category": "Machine-Learning",
-  "color": "#01A88D"
- },
- {
-  "file": "Arch_Amazon-RDS_64.svg",
-  "service": "Amazon RDS",
-  "category": "Database",
-  "color": "#C925D1"
- },
- {
-  "file": "Arch_Amazon-Redshift_64.svg",
-  "service": "Amazon Redshift",
-  "category": "Analytics",
-  "color": "#8C4FFF"
- },
- {
-  "file": "Arch_Amazon-Rekognition_64.svg",
-  "service": "Amazon Rekognition",
-  "category": "Machine-Learning",
-  "color": "#01A88D"
- },
- {
-  "file": "Arch_Amazon-Route-53_64.svg",
-  "service": "Amazon Route 53",
-  "category": "Networking-Content-Delivery",
-  "color": "#8C4FFF"
- },
- {
-  "file": "Arch_Amazon-SageMaker-AI_64.svg",
-  "service": "Amazon SageMaker AI",
-  "category": "Machine-Learning",
-  "color": "#01A88D"
- },
- {
-  "file": "Arch_Amazon-Simple-Email-Service_64.svg",
-  "service": "Amazon Simple Email Service",
-  "category": "Business-Applications",
-  "color": "#DD344C"
- },
- {
-  "file": "Arch_Amazon-Simple-Notification-Service_64.svg",
-  "service": "Amazon Simple Notification Service",
-  "category": "Application-Integration",
-  "color": "#E7157B"
- },
- {
-  "file": "Arch_Amazon-Simple-Queue-Service_64.svg",
-  "service": "Amazon Simple Queue Service",
-  "category": "Application-Integration",
-  "color": "#E7157B"
- },
- {
-  "file": "Arch_Amazon-Simple-Storage-Service_64.svg",
-  "service": "Amazon Simple Storage Service",
-  "category": "Storage",
-  "color": "#7AA116"
- },
- {
-  "file": "Arch_Amazon-Textract_64.svg",
-  "service": "Amazon Textract",
-  "category": "Machine-Learning",
-  "color": "#01A88D"
- },
- {
-  "file": "Arch_Amazon-Transcribe_64.svg",
-  "service": "Amazon Transcribe",
-  "category": "Machine-Learning",
-  "color": "#01A88D"
- },
- {
-  "file": "Arch_Amazon-Verified-Permissions_64.svg",
-  "service": "Amazon Verified Permissions",
-  "category": "Security-Identity-Compliance",
-  "color": "#DD344C"
- },
- {
-  "file": "Arch_Amazon-Virtual-Private-Cloud_64.svg",
-  "service": "Amazon Virtual Private Cloud",
-  "category": "Networking-Content-Delivery",
-  "color": "#8C4FFF"
- },
- {
-  "file": "Arch_Elastic-Load-Balancing_64.svg",
-  "service": "Elastic Load Balancing",
-  "category": "Networking-Content-Delivery",
-  "color": "#8C4FFF"
- },
- {
-  "file": "strands-agents-mark.svg",
-  "service": "Strands Agents",
-  "category": "Non-AWS",
-  "color": "#00cc60"
- }
+  {
+    "file": "Arch_AWS-Activate_64.svg",
+    "service": "AWS Activate",
+    "category": "Customer Enablement",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Amplify_64.svg",
+    "service": "AWS Amplify",
+    "category": "Front End Web Mobile",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-App-Mesh_64.svg",
+    "service": "AWS App Mesh",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-App-Runner_64.svg",
+    "service": "AWS App Runner",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-App-Studio_64.svg",
+    "service": "AWS App Studio",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-AppConfig_64.svg",
+    "service": "AWS AppConfig",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-AppFabric_64.svg",
+    "service": "AWS AppFabric",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-AppSync_64.svg",
+    "service": "AWS AppSync",
+    "category": "Application Integration",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Application-Auto-Scaling_64.svg",
+    "service": "AWS Application Auto Scaling",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Application-Discovery-Service_64.svg",
+    "service": "AWS Application Discovery Service",
+    "category": "Migration Modernization",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-Application-Migration-Service_64.svg",
+    "service": "AWS Application Migration Service",
+    "category": "Migration Modernization",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-Artifact_64.svg",
+    "service": "AWS Artifact",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Audit-Manager_64.svg",
+    "service": "AWS Audit Manager",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Auto-Scaling_64.svg",
+    "service": "AWS Auto Scaling",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-B2B-Data-Interchange_64.svg",
+    "service": "AWS B2B Data Interchange",
+    "category": "Application Integration",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Backint-Agent_64.svg",
+    "service": "AWS Backint Agent",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Backup_64.svg",
+    "service": "AWS Backup",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-Batch_64.svg",
+    "service": "AWS Batch",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Billing-Conductor_64.svg",
+    "service": "AWS Billing Conductor",
+    "category": "Cloud Financial Management",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-Budgets_64.svg",
+    "service": "AWS Budgets",
+    "category": "Cloud Financial Management",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-Certificate-Manager_64.svg",
+    "service": "AWS Certificate Manager",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Chatbot_64.svg",
+    "service": "AWS Chatbot",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Clean-Rooms_64.svg",
+    "service": "AWS Clean Rooms",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Client-VPN_64.svg",
+    "service": "AWS Client VPN",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Cloud-Control-API_64.svg",
+    "service": "AWS Cloud Control API",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Cloud-Development-Kit_64.svg",
+    "service": "AWS Cloud Development Kit",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Cloud-Map_64.svg",
+    "service": "AWS Cloud Map",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Cloud-WAN_64.svg",
+    "service": "AWS Cloud WAN",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Cloud9_64.svg",
+    "service": "AWS Cloud9",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-CloudFormation_64.svg",
+    "service": "AWS CloudFormation",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-CloudHSM_64.svg",
+    "service": "AWS CloudHSM",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-CloudShell_64.svg",
+    "service": "AWS CloudShell",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-CloudTrail_64.svg",
+    "service": "AWS CloudTrail",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-CodeArtifact_64.svg",
+    "service": "AWS CodeArtifact",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-CodeBuild_64.svg",
+    "service": "AWS CodeBuild",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-CodeCommit_64.svg",
+    "service": "AWS CodeCommit",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-CodeDeploy_64.svg",
+    "service": "AWS CodeDeploy",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-CodePipeline_64.svg",
+    "service": "AWS CodePipeline",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Command-Line-Interface_64.svg",
+    "service": "AWS Command Line Interface",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Compute-Optimizer_64.svg",
+    "service": "AWS Compute Optimizer",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Config_64.svg",
+    "service": "AWS Config",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Console-Mobile-Application_64.svg",
+    "service": "AWS Console Mobile Application",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Control-Tower_64.svg",
+    "service": "AWS Control Tower",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Cost-Explorer_64.svg",
+    "service": "AWS Cost Explorer",
+    "category": "Cloud Financial Management",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-Cost-and-Usage-Report_64.svg",
+    "service": "AWS Cost and Usage Report",
+    "category": "Cloud Financial Management",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-Data-Exchange_64.svg",
+    "service": "AWS Data Exchange",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Data-Transfer-Terminal_64.svg",
+    "service": "AWS Data Transfer Terminal",
+    "category": "Migration Modernization",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-DataSync_64.svg",
+    "service": "AWS DataSync",
+    "category": "Migration Modernization",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-Database-Migration-Service_64.svg",
+    "service": "AWS Database Migration Service",
+    "category": "Databases",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Deadline-Cloud_64.svg",
+    "service": "AWS Deadline Cloud",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Deep-Learning-AMIs_64.svg",
+    "service": "AWS Deep Learning AMIs",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-Deep-Learning-Containers_64.svg",
+    "service": "AWS Deep Learning Containers",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-DeepRacer_64.svg",
+    "service": "AWS DeepRacer",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-DevOps-Agent_64.svg",
+    "service": "AWS DevOps Agent",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Device-Farm_64.svg",
+    "service": "AWS Device Farm",
+    "category": "Front End Web Mobile",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Direct-Connect_64.svg",
+    "service": "AWS Direct Connect",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Directory-Service_64.svg",
+    "service": "AWS Directory Service",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Distro-for-OpenTelemetry_64.svg",
+    "service": "AWS Distro for OpenTelemetry",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Elastic-Beanstalk_64.svg",
+    "service": "AWS Elastic Beanstalk",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Elastic-Disaster-Recovery_64.svg",
+    "service": "AWS Elastic Disaster Recovery",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-Elemental-Appliances-&-Software_64.svg",
+    "service": "AWS Elemental Appliances & Software",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Elemental-Conductor_64.svg",
+    "service": "AWS Elemental Conductor",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Elemental-Delta_64.svg",
+    "service": "AWS Elemental Delta",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Elemental-Inference_64.svg",
+    "service": "AWS Elemental Inference",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-Elemental-Link_64.svg",
+    "service": "AWS Elemental Link",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Elemental-Live_64.svg",
+    "service": "AWS Elemental Live",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Elemental-MediaConnect_64.svg",
+    "service": "AWS Elemental MediaConnect",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Elemental-MediaConvert_64.svg",
+    "service": "AWS Elemental MediaConvert",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Elemental-MediaLive_64.svg",
+    "service": "AWS Elemental MediaLive",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Elemental-MediaPackage_64.svg",
+    "service": "AWS Elemental MediaPackage",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Elemental-MediaStore_64.svg",
+    "service": "AWS Elemental MediaStore",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Elemental-MediaTailor_64.svg",
+    "service": "AWS Elemental MediaTailor",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Elemental-Server_64.svg",
+    "service": "AWS Elemental Server",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-End-User-Messaging_64.svg",
+    "service": "AWS End User Messaging",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Entity-Resolution_64.svg",
+    "service": "AWS Entity Resolution",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Express-Workflows_64.svg",
+    "service": "AWS Express Workflows",
+    "category": "Application Integration",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Fargate_64.svg",
+    "service": "AWS Fargate",
+    "category": "Containers",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Fault-Injection-Service_64.svg",
+    "service": "AWS Fault Injection Service",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-FinOps-Agent_64.svg",
+    "service": "AWS FinOps Agent",
+    "category": "Cloud Financial Management",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-Firewall-Manager_64.svg",
+    "service": "AWS Firewall Manager",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Global-Accelerator_64.svg",
+    "service": "AWS Global Accelerator",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Glue-DataBrew_64.svg",
+    "service": "AWS Glue DataBrew",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Glue_64.svg",
+    "service": "AWS Glue",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Ground-Station_64.svg",
+    "service": "AWS Ground Station",
+    "category": "Satellite",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Health-Dashboard_64.svg",
+    "service": "AWS Health Dashboard",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-HealthImaging_64.svg",
+    "service": "AWS HealthImaging",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-HealthLake_64.svg",
+    "service": "AWS HealthLake",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-HealthOmics_64.svg",
+    "service": "AWS HealthOmics",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-HealthScribe_64.svg",
+    "service": "AWS HealthScribe",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-IAM-Identity-Center_64.svg",
+    "service": "AWS IAM Identity Center",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-IQ_64.svg",
+    "service": "AWS IQ",
+    "category": "Customer Enablement",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Identity-and-Access-Management_64.svg",
+    "service": "AWS Identity and Access Management",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Infrastructure-Composer_64.svg",
+    "service": "AWS Infrastructure Composer",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Interconnect_64.svg",
+    "service": "AWS Interconnect",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-IoT-Core_64.svg",
+    "service": "AWS IoT Core",
+    "category": "Internet of Things",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-IoT-Device-Defender_64.svg",
+    "service": "AWS IoT Device Defender",
+    "category": "Internet of Things",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-IoT-Device-Management_64.svg",
+    "service": "AWS IoT Device Management",
+    "category": "Internet of Things",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-IoT-Events_64.svg",
+    "service": "AWS IoT Events",
+    "category": "Internet of Things",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-IoT-ExpressLink_64.svg",
+    "service": "AWS IoT ExpressLink",
+    "category": "Internet of Things",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-IoT-FleetWise_64.svg",
+    "service": "AWS IoT FleetWise",
+    "category": "Internet of Things",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-IoT-Greengrass_64.svg",
+    "service": "AWS IoT Greengrass",
+    "category": "Internet of Things",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-IoT-SiteWise_64.svg",
+    "service": "AWS IoT SiteWise",
+    "category": "Internet of Things",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-IoT-TwinMaker_64.svg",
+    "service": "AWS IoT TwinMaker",
+    "category": "Internet of Things",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-Key-Management-Service_64.svg",
+    "service": "AWS Key Management Service",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Lake-Formation_64.svg",
+    "service": "AWS Lake Formation",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Lambda_64.svg",
+    "service": "AWS Lambda",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Launch-Wizard_64.svg",
+    "service": "AWS Launch Wizard",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-License-Manager_64.svg",
+    "service": "AWS License Manager",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Local-Zones_64.svg",
+    "service": "AWS Local Zones",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Mainframe-Modernization_64.svg",
+    "service": "AWS Mainframe Modernization",
+    "category": "Migration Modernization",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-Managed-Services_64.svg",
+    "service": "AWS Managed Services",
+    "category": "Customer Enablement",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Management-Console_64.svg",
+    "service": "AWS Management Console",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Marketplace_Dark_64.svg",
+    "service": "AWS Marketplace_Dark",
+    "category": "General Icons",
+    "color": "#FFFFFF"
+  },
+  {
+    "file": "Arch_AWS-Marketplace_Light_64.svg",
+    "service": "AWS Marketplace_Light",
+    "category": "General Icons",
+    "color": "#232F3E"
+  },
+  {
+    "file": "Arch_AWS-Migration-Evaluator_64.svg",
+    "service": "AWS Migration Evaluator",
+    "category": "Migration Modernization",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-Network-Firewall_64.svg",
+    "service": "AWS Network Firewall",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Neuron_64.svg",
+    "service": "AWS Neuron",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-Nitro-Enclaves_64.svg",
+    "service": "AWS Nitro Enclaves",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Organizations_64.svg",
+    "service": "AWS Organizations",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Outposts-family_64.svg",
+    "service": "AWS Outposts family",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Outposts-rack_64.svg",
+    "service": "AWS Outposts rack",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Outposts-servers_64.svg",
+    "service": "AWS Outposts servers",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Panorama_64.svg",
+    "service": "AWS Panorama",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-Parallel-Cluster_64.svg",
+    "service": "AWS Parallel Cluster",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Parallel-Computing-Service_64.svg",
+    "service": "AWS Parallel Computing Service",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Partner-Central_64.svg",
+    "service": "AWS Partner Central",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Payment-Cryptography_64.svg",
+    "service": "AWS Payment Cryptography",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Private-Certificate-Authority_64.svg",
+    "service": "AWS Private Certificate Authority",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-PrivateLink_64.svg",
+    "service": "AWS PrivateLink",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Professional-Services_64.svg",
+    "service": "AWS Professional Services",
+    "category": "Customer Enablement",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Proton_64.svg",
+    "service": "AWS Proton",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-RTB-Fabric_64.svg",
+    "service": "AWS RTB Fabric",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Resilience-Hub_64.svg",
+    "service": "AWS Resilience Hub",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Resource-Access-Manager_64.svg",
+    "service": "AWS Resource Access Manager",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Resource-Explorer_64.svg",
+    "service": "AWS Resource Explorer",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Secrets-Manager_64.svg",
+    "service": "AWS Secrets Manager",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Security-Agent_64.svg",
+    "service": "AWS Security Agent",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Security-Hub_64.svg",
+    "service": "AWS Security Hub",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Security-Incident-Response_64.svg",
+    "service": "AWS Security Incident Response",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Serverless-Application-Repository_64.svg",
+    "service": "AWS Serverless Application Repository",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Service-Catalog_64.svg",
+    "service": "AWS Service Catalog",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Service-Management-Connector_64.svg",
+    "service": "AWS Service Management Connector",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Shield_64.svg",
+    "service": "AWS Shield",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Signer_64.svg",
+    "service": "AWS Signer",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-SimSpace-Weaver_64.svg",
+    "service": "AWS SimSpace Weaver",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Site-to-Site-VPN_64.svg",
+    "service": "AWS Site to Site VPN",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Snowball-Edge_64.svg",
+    "service": "AWS Snowball Edge",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-Snowball_64.svg",
+    "service": "AWS Snowball",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-Step-Functions_64.svg",
+    "service": "AWS Step Functions",
+    "category": "Application Integration",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Storage-Gateway_64.svg",
+    "service": "AWS Storage Gateway",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_AWS-Supply-Chain_64.svg",
+    "service": "AWS Supply Chain",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Support_64.svg",
+    "service": "AWS Support",
+    "category": "Customer Enablement",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Sustainability_64.svg",
+    "service": "AWS Sustainability",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Systems-Manager_64.svg",
+    "service": "AWS Systems Manager",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Telco-Network-Builder_64.svg",
+    "service": "AWS Telco Network Builder",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Thinkbox-Deadline_64.svg",
+    "service": "AWS Thinkbox Deadline",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Thinkbox-Frost_64.svg",
+    "service": "AWS Thinkbox Frost",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Thinkbox-Krakatoa_64.svg",
+    "service": "AWS Thinkbox Krakatoa",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Thinkbox-Stoke_64.svg",
+    "service": "AWS Thinkbox Stoke",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Thinkbox-XMesh_64.svg",
+    "service": "AWS Thinkbox XMesh",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Tools-and-SDKs_64.svg",
+    "service": "AWS Tools and SDKs",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Training-Certification_64.svg",
+    "service": "AWS Training Certification",
+    "category": "Customer Enablement",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-Transfer-Family_64.svg",
+    "service": "AWS Transfer Family",
+    "category": "Migration Modernization",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-Transform_64.svg",
+    "service": "AWS Transform",
+    "category": "Migration Modernization",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_AWS-Transit-Gateway_64.svg",
+    "service": "AWS Transit Gateway",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-Trusted-Advisor_64.svg",
+    "service": "AWS Trusted Advisor",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-User-Notifications_64.svg",
+    "service": "AWS User Notifications",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Verified-Access_64.svg",
+    "service": "AWS Verified Access",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_AWS-WAF_64.svg",
+    "service": "AWS WAF",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-Wavelength_64.svg",
+    "service": "AWS Wavelength",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_AWS-Well-Architected-Tool_64.svg",
+    "service": "AWS Well Architected Tool",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_AWS-Wickr_64.svg",
+    "service": "AWS Wickr",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_AWS-X-Ray_64.svg",
+    "service": "AWS X Ray",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-rePost-Private_64.svg",
+    "service": "AWS rePost Private",
+    "category": "Customer Enablement",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_AWS-rePost_64.svg",
+    "service": "AWS rePost",
+    "category": "Customer Enablement",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_Amazon-API-Gateway_64.svg",
+    "service": "Amazon API Gateway",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-AppFlow_64.svg",
+    "service": "Amazon AppFlow",
+    "category": "Application Integration",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_Amazon-Application-Recovery-Controller_64.svg",
+    "service": "Amazon Application Recovery Controller",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-Athena_64.svg",
+    "service": "Amazon Athena",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-Augmented-AI-A2I_64.svg",
+    "service": "Amazon Augmented AI A2I",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Aurora_64.svg",
+    "service": "Amazon Aurora",
+    "category": "Databases",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_Amazon-Bedrock-AgentCore_64.svg",
+    "service": "Amazon Bedrock AgentCore",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Bedrock_64.svg",
+    "service": "Amazon Bedrock",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Braket_64.svg",
+    "service": "Amazon Braket",
+    "category": "Quantum Technologies",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-Chime-SDK_64.svg",
+    "service": "Amazon Chime SDK",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-Chime_64.svg",
+    "service": "Amazon Chime",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-Cloud-Directory_64.svg",
+    "service": "Amazon Cloud Directory",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-CloudFront_64.svg",
+    "service": "Amazon CloudFront",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-CloudSearch_64.svg",
+    "service": "Amazon CloudSearch",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-CloudWatch_64.svg",
+    "service": "Amazon CloudWatch",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_Amazon-CodeCatalyst_64.svg",
+    "service": "Amazon CodeCatalyst",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_Amazon-CodeGuru_64.svg",
+    "service": "Amazon CodeGuru",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-CodeWhisperer_64.svg",
+    "service": "Amazon CodeWhisperer",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Cognito_64.svg",
+    "service": "Amazon Cognito",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-Comprehend-Medical_64.svg",
+    "service": "Amazon Comprehend Medical",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Comprehend_64.svg",
+    "service": "Amazon Comprehend",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Connect_64.svg",
+    "service": "Amazon Connect",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-Corretto_64.svg",
+    "service": "Amazon Corretto",
+    "category": "Developer Tools",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_Amazon-DCV_64.svg",
+    "service": "Amazon DCV",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-Data-Firehose_64.svg",
+    "service": "Amazon Data Firehose",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-DataZone_64.svg",
+    "service": "Amazon DataZone",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-Detective_64.svg",
+    "service": "Amazon Detective",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-DevOps-Guru_64.svg",
+    "service": "Amazon DevOps Guru",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-DocumentDB_64.svg",
+    "service": "Amazon DocumentDB",
+    "category": "Databases",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_Amazon-DynamoDB_64.svg",
+    "service": "Amazon DynamoDB",
+    "category": "Databases",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_Amazon-EC2-Auto-Scaling_64.svg",
+    "service": "Amazon EC2 Auto Scaling",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-EC2-Image-Builder_64.svg",
+    "service": "Amazon EC2 Image Builder",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-EC2_64.svg",
+    "service": "Amazon EC2",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-ECS-Anywhere_64.svg",
+    "service": "Amazon ECS Anywhere",
+    "category": "Containers",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-EFS_64.svg",
+    "service": "Amazon EFS",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_Amazon-EKS-Anywhere_64.svg",
+    "service": "Amazon EKS Anywhere",
+    "category": "Containers",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-EKS-Distro_64.svg",
+    "service": "Amazon EKS Distro",
+    "category": "Containers",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-EMR_64.svg",
+    "service": "Amazon EMR",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-ElastiCache_64.svg",
+    "service": "Amazon ElastiCache",
+    "category": "Databases",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_Amazon-Elastic-Block-Store_64.svg",
+    "service": "Amazon Elastic Block Store",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_Amazon-Elastic-Container-Registry_64.svg",
+    "service": "Amazon Elastic Container Registry",
+    "category": "Containers",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-Elastic-Container-Service_64.svg",
+    "service": "Amazon Elastic Container Service",
+    "category": "Containers",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-Elastic-Inference_64.svg",
+    "service": "Amazon Elastic Inference",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Elastic-Kubernetes-Service_64.svg",
+    "service": "Amazon Elastic Kubernetes Service",
+    "category": "Containers",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-Elastic-VMware-Service_64.svg",
+    "service": "Amazon Elastic VMware Service",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-EventBridge_64.svg",
+    "service": "Amazon EventBridge",
+    "category": "Application Integration",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_Amazon-FSx-for-Lustre_64.svg",
+    "service": "Amazon FSx for Lustre",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_Amazon-FSx-for-NetApp-ONTAP_64.svg",
+    "service": "Amazon FSx for NetApp ONTAP",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_Amazon-FSx-for-OpenZFS_64.svg",
+    "service": "Amazon FSx for OpenZFS",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_Amazon-FSx-for-WFS_64.svg",
+    "service": "Amazon FSx for WFS",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_Amazon-FSx_64.svg",
+    "service": "Amazon FSx",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_Amazon-File-Cache_64.svg",
+    "service": "Amazon File Cache",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_Amazon-FinSpace_64.svg",
+    "service": "Amazon FinSpace",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-Forecast_64.svg",
+    "service": "Amazon Forecast",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Fraud-Detector_64.svg",
+    "service": "Amazon Fraud Detector",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-GameLift-Servers_64.svg",
+    "service": "Amazon GameLift Servers",
+    "category": "Games",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-GameLift-Streams_64.svg",
+    "service": "Amazon GameLift Streams",
+    "category": "Games",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-GuardDuty_64.svg",
+    "service": "Amazon GuardDuty",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-Inspector_64.svg",
+    "service": "Amazon Inspector",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-Interactive-Video-Service_64.svg",
+    "service": "Amazon Interactive Video Service",
+    "category": "Media Services",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-Kendra_64.svg",
+    "service": "Amazon Kendra",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Keyspaces_64.svg",
+    "service": "Amazon Keyspaces",
+    "category": "Databases",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_Amazon-Kinesis-Data-Streams_64.svg",
+    "service": "Amazon Kinesis Data Streams",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-Kinesis-Video-Streams_64.svg",
+    "service": "Amazon Kinesis Video Streams",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-Kinesis_64.svg",
+    "service": "Amazon Kinesis",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-Lex_64.svg",
+    "service": "Amazon Lex",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Lightsail-for-Research_64.svg",
+    "service": "Amazon Lightsail for Research",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-Lightsail_64.svg",
+    "service": "Amazon Lightsail",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-Location-Service_64.svg",
+    "service": "Amazon Location Service",
+    "category": "Front End Web Mobile",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-Lookout-for-Equipment_64.svg",
+    "service": "Amazon Lookout for Equipment",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Lookout-for-Vision_64.svg",
+    "service": "Amazon Lookout for Vision",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-MQ_64.svg",
+    "service": "Amazon MQ",
+    "category": "Application Integration",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_Amazon-Macie_64.svg",
+    "service": "Amazon Macie",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-Managed-Blockchain_64.svg",
+    "service": "Amazon Managed Blockchain",
+    "category": "Blockchain",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Amazon-Managed-Grafana_64.svg",
+    "service": "Amazon Managed Grafana",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_Amazon-Managed-Service-for-Apache-Flink_64.svg",
+    "service": "Amazon Managed Service for Apache Flink",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-Managed-Service-for-Prometheus_64.svg",
+    "service": "Amazon Managed Service for Prometheus",
+    "category": "Management Tools",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_Amazon-Managed-Streaming-for-Apache-Kafka_64.svg",
+    "service": "Amazon Managed Streaming for Apache Kafka",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-Managed-Workflows-for-Apache-Airflow_64.svg",
+    "service": "Amazon Managed Workflows for Apache Airflow",
+    "category": "Application Integration",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_Amazon-MemoryDB_64.svg",
+    "service": "Amazon MemoryDB",
+    "category": "Databases",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_Amazon-Monitron_64.svg",
+    "service": "Amazon Monitron",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Neptune_64.svg",
+    "service": "Amazon Neptune",
+    "category": "Databases",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_Amazon-Nova_64.svg",
+    "service": "Amazon Nova",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-OpenSearch-Service_64.svg",
+    "service": "Amazon OpenSearch Service",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-Personalize_64.svg",
+    "service": "Amazon Personalize",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Pinpoint-APIs_64.svg",
+    "service": "Amazon Pinpoint APIs",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-Pinpoint_64.svg",
+    "service": "Amazon Pinpoint",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-Polly_64.svg",
+    "service": "Amazon Polly",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Q_64.svg",
+    "service": "Amazon Q",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Quick_64.svg",
+    "service": "Amazon Quick",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-RDS_64.svg",
+    "service": "Amazon RDS",
+    "category": "Databases",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_Amazon-Redshift_64.svg",
+    "service": "Amazon Redshift",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-Rekognition_64.svg",
+    "service": "Amazon Rekognition",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Route-53_64.svg",
+    "service": "Amazon Route 53",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-S3-on-Outposts_64.svg",
+    "service": "Amazon S3 on Outposts",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_Amazon-SageMaker-AI_64.svg",
+    "service": "Amazon SageMaker AI",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-SageMaker-Ground-Truth_64.svg",
+    "service": "Amazon SageMaker Ground Truth",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-SageMaker-Studio-Lab_64.svg",
+    "service": "Amazon SageMaker Studio Lab",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-SageMaker_64.svg",
+    "service": "Amazon SageMaker",
+    "category": "Analytics",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-Security-Lake_64.svg",
+    "service": "Amazon Security Lake",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-Simple-Email-Service_64.svg",
+    "service": "Amazon Simple Email Service",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-Simple-Notification-Service_64.svg",
+    "service": "Amazon Simple Notification Service",
+    "category": "Application Integration",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_Amazon-Simple-Queue-Service_64.svg",
+    "service": "Amazon Simple Queue Service",
+    "category": "Application Integration",
+    "color": "#E7157B"
+  },
+  {
+    "file": "Arch_Amazon-Simple-Storage-Service-Glacier_64.svg",
+    "service": "Amazon Simple Storage Service Glacier",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_Amazon-Simple-Storage-Service_64.svg",
+    "service": "Amazon Simple Storage Service",
+    "category": "Storage",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_Amazon-Textract_64.svg",
+    "service": "Amazon Textract",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Timestream_64.svg",
+    "service": "Amazon Timestream",
+    "category": "Databases",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_Amazon-Transcribe_64.svg",
+    "service": "Amazon Transcribe",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-Translate_64.svg",
+    "service": "Amazon Translate",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Amazon-VPC-Lattice_64.svg",
+    "service": "Amazon VPC Lattice",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-Verified-Permissions_64.svg",
+    "service": "Amazon Verified Permissions",
+    "category": "Security Identity",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-Virtual-Private-Cloud_64.svg",
+    "service": "Amazon Virtual Private Cloud",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Amazon-WorkDocs-SDK_64.svg",
+    "service": "Amazon WorkDocs SDK",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-WorkDocs_64.svg",
+    "service": "Amazon WorkDocs",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-WorkMail_64.svg",
+    "service": "Amazon WorkMail",
+    "category": "Business Applications",
+    "color": "#DD344C"
+  },
+  {
+    "file": "Arch_Amazon-WorkSpaces_64.svg",
+    "service": "Amazon WorkSpaces",
+    "category": "End User Computing",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Apache-MXNet-on-AWS_64.svg",
+    "service": "Apache MXNet on AWS",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Bottlerocket_64.svg",
+    "service": "Bottlerocket",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Elastic-Fabric-Adapter_64.svg",
+    "service": "Elastic Fabric Adapter",
+    "category": "Compute",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Elastic-Load-Balancing_64.svg",
+    "service": "Elastic Load Balancing",
+    "category": "Networking Content Delivery",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_FreeRTOS_64.svg",
+    "service": "FreeRTOS",
+    "category": "Internet of Things",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_Open-3D-Engine_64.svg",
+    "service": "Open 3D Engine",
+    "category": "Games",
+    "color": "#8C4FFF"
+  },
+  {
+    "file": "Arch_Oracle-Database-at-AWS_64.svg",
+    "service": "Oracle Database at AWS",
+    "category": "Databases",
+    "color": "#C925D1"
+  },
+  {
+    "file": "Arch_PyTorch-on-AWS_64.svg",
+    "service": "PyTorch on AWS",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "Arch_Red-Hat-OpenShift-Service-on-AWS_64.svg",
+    "service": "Red Hat OpenShift Service on AWS",
+    "category": "Containers",
+    "color": "#ED7100"
+  },
+  {
+    "file": "Arch_Reserved-Instance-Reporting_64.svg",
+    "service": "Reserved Instance Reporting",
+    "category": "Cloud Financial Management",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_Savings-Plans_64.svg",
+    "service": "Savings Plans",
+    "category": "Cloud Financial Management",
+    "color": "#7AA116"
+  },
+  {
+    "file": "Arch_TensorFlow-on-AWS_64.svg",
+    "service": "TensorFlow on AWS",
+    "category": "Artificial Intelligence",
+    "color": "#01A88D"
+  },
+  {
+    "file": "strands-agents-mark.svg",
+    "service": "Strands Agents",
+    "category": "Non AWS",
+    "color": "#00FF77"
+  }
 ]

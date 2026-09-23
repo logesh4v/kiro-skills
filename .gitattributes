@@ -1,0 +1,4 @@
+# Official third-party SVG assets are reviewed by manifest/source-package checks,
+# not by scrolling thousands of path-coordinate lines in a PR.
+blog-writer/assets/aws-icons/*.svg -diff
+blog-writer/assets/aws-resource-icons/*.svg -diff
