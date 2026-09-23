@@ -21,6 +21,8 @@ jobs:
         run: python3 tests/validate_skill.py
       - name: check_blog.py behaviour
         run: python3 tests/test_check_blog.py
+      - name: finalize_blog.py behaviour
+        run: python3 tests/test_finalize_blog.py
 
   install:
     name: install.sh smoke (${{ matrix.os }})

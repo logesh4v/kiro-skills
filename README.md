@@ -5,22 +5,50 @@ IDE, Kiro CLI, Kiro Crew, and (as workspace skills) Kiro Web.
 
 | Skill | Ask Kiro… | What you get |
 |---|---|---|
-| **blog-writer** | "write a blog about what I built", "APN blog", "Builder Center post" | A publishable technical post in one of two proven structures, an architecture diagram with official AWS icons, and a brief that traces every claim to its source. |
+| **blog-writer** | "write a blog about what I built", "APN blog", "architecture deep dive", "migration story", "how-to" | A publishable AWS technical post, one or more topology-correct diagrams, and a brief tracing every claim to code, measurements, AWS documentation or the author. |
 
-**Status:** v0.1. The fact-sheet and lint phases have been exercised against
-real repos and real published posts; the full interview → diagram → draft flow
-has not yet produced a published article. Treat the first few runs as a test
-and [tell us what broke](#feedback-and-contributions).
+**Status:** v0.2 candidate. The fact-sheet and lint phases have been exercised
+against real repos and published posts; one complete Builder run produced a
+2,327-word draft and diagram, correctly stopping on four author-only facts.
+The eight diagram families and full Q3 2026 AWS icon corpus are new in v0.2;
+treat first use of each family as verification and
+[tell us what broke](#feedback-and-contributions).
+
+## Coverage
+
+- **Story shapes:** build story, tutorial/how-to, architecture deep dive,
+  migration/modernization, performance/cost, incident/lesson learned,
+  comparison/decision, and customer case study.
+- **Publication voices:** Builder Center/personal, Partner/APN, and general
+  engineering.
+- **Diagram families:** application/serverless, event-driven, multi-Region/DR,
+  multi-account/landing zone, hybrid/network, data/analytics/ML, CI/CD, and
+  migration/modernization. Complex systems use two focused views rather than
+  one icon wall.
+- **Official assets:** all 303 uniquely named 64px AWS service icons and all
+  513 AWS resource SVGs from the official Q3 2026 package, plus the Strands
+  Agents mark. Nothing is hand-drawn or recoloured.
+- **AWS steering:** current service claims can be checked through the AWS
+  Documentation MCP server (when installed) or official AWS documentation;
+  every architecture gets a six-pillar Well-Architected claim review.
+
+Coverage does not mean the skill invents missing facts. It blocks on `[VERIFY]`
+when code, measurements, AWS documentation or the author cannot support a
+claim, boundary or arrow.
 
 ## Prerequisites
 
 - Kiro IDE, Kiro CLI, or Kiro Crew with Agent Skills support.
-- `python3` (3.9+, standard library only) for the two helper scripts.
-- Google Chrome, for `render_diagram.py` (SVG → PNG). Without it the skill
-  still writes the SVG; you just render it yourself.
-- `git`, to clone and update.
+- `python3` (3.9+, standard library only) for helper scripts.
+- Google Chrome for `render_diagram.py` (SVG → PNG). Without it the skill still
+  writes SVG; render it yourself before publication.
+- `git` to clone and update.
+- Optional: the AWS Documentation MCP server for current service/feature
+  verification. The skill falls back to official `docs.aws.amazon.com` pages.
 
-## Install (one line)
+## Install
+
+macOS / Linux:
 
 ```bash
 git clone https://github.com/logesh4v/kiro-skills.git ~/kiro-skills && ~/kiro-skills/install.sh
@@ -32,28 +60,25 @@ Windows (PowerShell):
 git clone https://github.com/logesh4v/kiro-skills.git $env:USERPROFILE\kiro-skills; & $env:USERPROFILE\kiro-skills\install.ps1
 ```
 
-The installer symlinks each skill into `~/.kiro/skills/` (IDE + CLI) and
-`~/.kiro/crew/skills/` (Crew). Restart Kiro or start a new chat. Re-running
-is safe.
+The installer symlinks every skill into `~/.kiro/skills/` (IDE + CLI) and
+`~/.kiro/crew/skills/` (Crew). Restart Kiro or start a new chat. Re-running is
+safe.
 
-**Using Kiro Web or Mobile?** They read only workspace skills. From inside
-the project you are writing about:
+**Kiro Web or Mobile:** they read workspace skills only. From the project:
 
 ```bash
 cd /path/to/your/project && ~/kiro-skills/install.sh --workspace
 ```
 
-then commit the resulting `.kiro/skills/` folder. A workspace skill wins over
-a global one with the same name.
+Commit the resulting `.kiro/skills/` folder. A workspace skill wins over a
+global skill with the same name.
 
-**No terminal?** In Kiro IDE: *Agent Steering & Skills → + → Import a skill →
-GitHub*, and paste the URL of the **skill folder**, not the repo root:
+**No terminal:** in Kiro IDE choose *Agent Steering & Skills → + → Import a
+skill → GitHub* and paste the skill-folder URL:
 
-```
 https://github.com/logesh4v/kiro-skills/tree/main/blog-writer
-```
 
-Imported skills are copies, not links — re-import to pick up updates.
+Imported skills are copies — re-import to update.
 
 ## Update
 
@@ -61,78 +86,78 @@ Imported skills are copies, not links — re-import to pick up updates.
 git -C ~/kiro-skills pull
 ```
 
-Symlinked installs pick it up immediately. Imported or `--copy` installs need
-a re-import / re-run of the installer.
+Symlinked installs update immediately. Imported or `--copy` installs need a
+re-import / re-run.
 
 ## Using blog-writer
 
-Type `/blog-writer` or just describe what you want. The skill will:
+Type `/blog-writer` or describe the outcome. The skill will:
 
-1. Ask for the codebase and build a fact sheet from it (services, models,
-   component counts, config) before writing anything. Numbers in the post
-   come from the code, not from memory.
-2. Ask which genre — **Builder Center** (first person, ~2,200 words, "gaps I
-   hit and how I fixed them") or **Partner/APN** (third person, ≤1,500 words,
-   AWS editorial rules).
-3. Interview you: eight questions, one at a time, pushed back on once if vague.
-4. Draw the diagram from the fact sheet using official AWS icons, render it,
-   and look at the result.
-5. Draft with every claim tagged to its source (`[code:]`, `[dash:]`,
-   `[author]`, `[VERIFY]`).
-6. Lint (`scripts/check_blog.py`) and hand over the post, the SVG + PNG, and
-   `brief.md` for review.
+1. Ask for the codebase and build a fact sheet (services, resources, models,
+   component counts, config, topology and tests) before prose.
+2. Select a publication voice and one of eight story archetypes.
+3. Verify current AWS service claims against official AWS docs; apply the six
+   Well-Architected pillars as a claim/trade-off review, not an audit.
+4. Interview you with eight evidence-seeking questions, one at a time.
+5. Select one or more topology templates, replace sample services only with
+   fact-sheet evidence, render every SVG and visually inspect every PNG.
+6. Draft with every claim tagged `[code:]`, `[dash:]`, `[aws-doc:]`, `[author]`
+   or `[VERIFY]`.
+7. Run the mechanical lint, archetype proof gate and Well-Architected
+   contradiction gate. Any `[VERIFY]` blocks "done". Once clear,
+   `finalize_blog.py` writes the provenance ledger into `brief.md` and emits a
+   clean `<slug>-publish.md` with internal source tags removed.
 
-Everything lands in `blog-assets/` in your working directory. Nothing is
-published; you review and post.
+Outputs land in `blog-assets/` next to your working directory. Nothing is
+published automatically.
 
 ## Repo layout
 
-```
+```text
 blog-writer/
-├── SKILL.md                    procedure (loaded on activation)
-├── references/                 loaded only when the procedure says so
-│   ├── structure-builder.md    Builder Center genre
-│   ├── structure-partner.md    Partner / APN genre
-│   ├── aws-style.md            naming, numbers, vocabulary, leak rules
-│   └── diagram-rules.md        AWS group-box idiom, icon rules, render recipe
+├── SKILL.md
+├── references/
+│   ├── structure-builder.md / structure-partner.md
+│   ├── story-archetypes.md
+│   ├── aws-style.md
+│   ├── aws-docs-well-architected.md
+│   ├── diagram-patterns.md
+│   └── diagram-rules.md
 ├── assets/
-│   ├── aws-icons/              63 official Arch_*_64.svg + Strands mark + MANIFEST.json
-│   └── diagram-skeleton.svg    Cloud → Region → VPC frame, ready to populate
+│   ├── aws-icons/              303 service SVGs + manifest + source record
+│   ├── aws-resource-icons/     513 resource SVGs + manifest
+│   ├── diagram-patterns/       8 editable topology templates
+│   └── diagram-skeleton.svg    compact application fallback
 └── scripts/
-    ├── check_blog.py           lint: budget, vocabulary, first-mention names, leaks
-    └── render_diagram.py       SVG → 2× PNG via headless Chrome (never Quick Look)
-install.sh / install.ps1        symlink every skill folder into Kiro's skill dirs
+    ├── check_blog.py / finalize_blog.py / render_diagram.py
+    └── import_aws_icons.py / import_aws_resource_icons.py
 ```
 
 ## Feedback and contributions
 
-Pull requests and issues are welcome — a wrong rule, a missing icon, a
-structure that did not fit your post, a lint false positive. Include the
-input that broke it (a redacted paragraph or the service name is enough).
+Pull requests and issues are welcome — a wrong rule, missing/renamed icon,
+layout that does not fit, or lint false positive. Include the smallest redacted
+input that reproduces it.
 
-**How a change lands.** Open a PR against `main`. CI runs
-`tests/validate_skill.py` (skill structure, script size, manifest, leak scan),
-`tests/test_check_blog.py` (linter behaviour on the fixtures), the installer
-on Linux and macOS, and shellcheck. `main` is protected: CI must be green and
-the repo owner (see `.github/CODEOWNERS`) must approve before merge. Run the
-two test scripts locally first — they are stdlib Python and take a second.
+**How a change lands:** open a PR against `main`. CI validates frontmatter,
+references, script compilation/size, both icon manifests, XML, leak scans,
+linter fixtures, installer behavior on Linux/macOS and shellcheck. `main` is
+protected: CI must pass and the code owner must approve.
 
-**Adding a skill:** one folder per skill, `SKILL.md` with `name` (= folder
-name) and `description` (≤1,024 chars — it is the trigger, so write it the
-way people ask). Keep `SKILL.md` to the procedure; put long material in
-`references/`. Scripts are Python, standard library only, under 4 KB, no
-credentials, no network calls to unknown hosts.
+**Adding a skill:** one folder, a `SKILL.md` whose `name` equals the folder and
+whose `description` uses phrases people ask. Keep procedures in `SKILL.md` and
+long guidance in `references/`. Scripts are stdlib Python, under 4 KB, with no
+credentials or network calls to unknown hosts.
 
-**Adding an icon:** see the *Icon availability* section of
-`blog-writer/references/diagram-rules.md` — official assets only, and
-regenerate `MANIFEST.json`.
+**Updating icons:** download the quarterly Icon package from the official AWS
+Architecture Icons page and run both import scripts. Review removals/renames,
+render all eight templates, visually inspect them, then update the source record.
 
 ## Licences
 
-Repo contents: [MIT](LICENSE).
+Repo-authored content: [MIT](LICENSE).
 
-`blog-writer/assets/aws-icons/` contains the official
-[AWS Architecture Icons](https://aws.amazon.com/architecture/icons/),
-redistributed unmodified for use in architecture diagrams per AWS's terms;
-AWS's own licence governs those files. The Strands Agents mark is from
+The AWS service/resource SVGs come unmodified from the official
+[AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) package;
+AWS's terms govern those files. The Strands Agents mark is from
 [strandsagents.com](https://strandsagents.com).

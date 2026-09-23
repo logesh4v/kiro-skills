@@ -1,10 +1,10 @@
 ---
 name: blog-writer
-description: Write a publishable technical blog post about something built on AWS, with a correct architecture diagram. Use when asked to write a blog, article, case study, Builder Center post, APN or partner blog, or "write up what we built". Gathers facts from the codebase first, interviews the author, drafts to a proven structure, draws the diagram with official AWS icons, and gates every claim on evidence.
+description: Write any evidence-based AWS technical blog end to end — build story, tutorial, architecture deep dive, migration, performance/cost, incident lesson, comparison, Builder Center, APN or partner case study — with topology-correct diagrams. Gathers facts from code, checks current AWS docs and all six Well-Architected pillars, interviews the author, selects from eight diagram patterns using the complete official AWS service/resource icon corpus, traces every claim to evidence, and blocks unsupported claims.
 license: Apache-2.0
 metadata:
   author: ShellKode
-  version: 0.1.0
+  version: 0.2.0
   genres: builder-center, partner-apn
 ---
 
@@ -35,7 +35,7 @@ Everything lands in `blog-assets/` next to the working directory:
 |---|---|
 | `brief.md` | Interview answers + fact sheet + every claim's source. The review artefact. |
 | `<slug>.md` | The post, in the chosen genre's structure |
-| `figure-1.svg` / `figure-1.png` | Architecture diagram, vector + 2× raster |
+| `figure-N.svg` / `figure-N.png` | One or more focused architecture views, vector + 2× raster |
 | `lint-report.txt` | Output of `scripts/check_blog.py` — must be clean before "done" |
 
 ## Phase 1 — Locate the source of truth
@@ -85,18 +85,42 @@ and every technical claim later carries `[VERIFY: no code]`. Do not soften this.
 In Kiro Crew, also run `search_chat_history` for the project name — the build
 sessions often hold the "what broke and how we fixed it" material verbatim.
 
-## Phase 2 — Choose the genre, load ONE reference
+## Phase 2 — Choose publication voice AND story archetype
+
+Load `references/story-archetypes.md`. Choose the reader's question first:
+build story, tutorial/how-to, architecture deep dive, migration/modernization,
+performance/cost, incident/lesson learned, comparison/decision, or customer
+case study. Record `Genre:` and `Archetype:` at the top of `brief.md`.
+
+Then choose one publication voice:
 
 | Signal | Genre | Load |
 |---|---|---|
-| "I built", first person, Builder Center, dev.to, personal | **builder** | `references/structure-builder.md` |
-| Named customer, partner, APN, "case study", AWS blog channel | **partner** | `references/structure-partner.md` |
+| "I built", Builder Center, dev.to, personal | **builder** | `references/structure-builder.md` for build stories; otherwise the archetype order |
+| Named customer, partner, APN, case study | **partner** | `references/structure-partner.md` |
+| Team engineering / general technical | **technical** | the archetype order in `story-archetypes.md` |
 
-Confirm the choice with the author in one line. Then load only that file — the
-two genres have opposite rules on voice, length and vocabulary, and mixing them
-is the most common cause of a rewrite.
+Confirm both choices with the author in one line. Do not mix first-person
+builder voice into a partner case study. Always load `references/aws-style.md`.
 
-Always load `references/aws-style.md` — it applies to both.
+## Phase 2.5 — Current AWS docs + Well-Architected steering
+
+Load `references/aws-docs-well-architected.md`.
+
+After code proves what the workload deploys, verify every publication-critical
+claim about current feature names, Region support, service behavior, quotas or
+integration shapes against official AWS documentation. When the AWS
+Documentation MCP server is available, use `search_documentation` then
+`read_sections` / `read_documentation`; otherwise retrieve the same page from
+`docs.aws.amazon.com`. Record the URL, section and read date under
+`## AWS documentation checks` in `brief.md`. Search snippets are not evidence.
+
+Review the architecture through all six AWS Well-Architected pillars:
+operational excellence, security, reliability, performance efficiency, cost
+optimization and sustainability. For each write `evidence`, `trade-off`, `not
+in scope`, or `[VERIFY]` in the brief. This is a constructive design/claim
+review, not a Well-Architected audit. Never add architecture to make the review
+look green.
 
 ## Phase 3 — The interview
 
@@ -121,22 +145,30 @@ both and the dates; the post will state the trend, not just the new number.
 
 ## Phase 4 — Diagram
 
-Load `references/diagram-rules.md`. Then:
+Load `references/diagram-rules.md` and `references/diagram-patterns.md`. Then:
 
-1. Start from `assets/diagram-skeleton.svg` (AWS Cloud → Region → VPC frames,
-   actor slots, service row). Every AWS node you place must appear in the
-   Phase 1 fact sheet. Every non-AWS component (third-party API, vendor
-   gateway, the customer's core system) gets a **neutral glyph, never an AWS
-   icon**.
-2. Icons come from `assets/aws-icons/` — official Architecture Icons, flat
-   category-coloured squares, embedded verbatim. `MANIFEST.json` maps file →
-   service → category colour. Do not redraw, recolour, or round them.
-3. Label below each icon, centred. Arrows thin, labelled with what flows.
-   Region label top-right of the Cloud frame. Caption below: *Figure 1: …*.
-4. Render: `python3 scripts/render_diagram.py figure-1.svg` → `figure-1.png`
-   at 2×. **Then open the PNG and look at it** before continuing. Check: no
-   clipped edges, no overlapping labels, every arrow lands on a node.
-5. Scan the SVG for anything that must never ship: account IDs, ARNs, CIDRs,
+1. Choose from the eight topology templates in `assets/diagram-patterns/`:
+   application/serverless, event-driven, multi-Region/DR, multi-account,
+   hybrid/network, data/analytics/ML, CI/CD, or migration/modernization.
+   `diagram-skeleton.svg` remains the compact application fallback. If the
+   system has two shapes, use two focused figures; never make one icon wall.
+2. Answer the pattern's topology gate in `brief.md`: actors, external systems,
+   accounts/OUs, Regions/AZs/VPCs, sync/async paths, state, trust crossings,
+   retries/DLQs, failover/RTO/RPO, data lifecycle and cost drivers. Anything
+   code cannot prove is `[VERIFY: diagram — ...]`.
+3. Every AWS node must appear in the fact sheet. Non-AWS components use neutral
+   glyphs. Never infer a VPC, private endpoint, Multi-AZ/Region placement,
+   encryption path, backup or failover because it is recommended.
+4. Service icons come from `assets/aws-icons/` (all 303 unique official Q3 2026
+   service SVGs). Resource-level precision comes from
+   `assets/aws-resource-icons/` (all 513 official resource SVGs). Search each
+   `MANIFEST.json`, embed the SVG verbatim, and never redraw or recolour.
+5. Label below each icon, centred. Arrows thin and labelled with what flows.
+   Caption every view: *Figure N: …*.
+6. Render every figure with `python3 scripts/render_diagram.py figure-N.svg`
+   at 2×. **Open every PNG and look at it.** Check clipping, overlapping labels,
+   arrow endpoints, frame membership and legibility at 1000px width.
+7. Scan every SVG for anything that must never ship: account IDs, ARNs, CIDRs,
    hostnames, secrets. `check_blog.py` does this too, but look yourself.
 
 ## Phase 5 — Draft
@@ -146,6 +178,7 @@ tag every technical claim inline with its provenance:
 
 - `[code: src/path.py]` — read it in Phase 1
 - `[dash: <screenshot name>]` — from a dashboard or metrics view
+- `[aws-doc: <URL>#<section>, read <date>]` — current official AWS documentation
 - `[author]` — the author said so, not otherwise verified
 - `[VERIFY]` — no source yet; **blocks completion**
 
@@ -163,14 +196,26 @@ Rules that apply to both genres:
 
 ## Phase 6 — Gate
 
-Run `python3 scripts/check_blog.py <slug>.md --genre <builder|partner> --svg figure-1.svg`.
+Run `python3 scripts/check_blog.py <slug>.md --genre <builder|partner> --svg figure-1.svg` (`technical` uses `builder` for the mechanical voice-neutral gate).
 It checks: word budget for the genre, banned vocabulary, first-mention service
 names, unexpanded acronyms, remaining `[VERIFY]` tags, figure captions, and
 leaked identifiers in the SVG. Fix everything it reports. It writes
 `lint-report.txt`.
 
-Then hand over: the post, the SVG + PNG, `brief.md`. Tell the author which
-claims are `[author]`-only so they know what a reviewer will ask about.
+Then apply the archetype proof gate in `story-archetypes.md` and the
+Well-Architected contradiction gate in `aws-docs-well-architected.md`. Any
+unsupported high-availability, disaster-recovery, security/compliance,
+scalability, cost or sustainability claim becomes `[VERIFY]` and blocks done.
+
+When every gate passes, run
+`python3 scripts/finalize_blog.py <slug>.md brief.md`. It fails closed on any
+`[VERIFY]`, copies every `[code:]` / `[dash:]` / `[aws-doc:]` / `[author]`
+source into a generated table in `brief.md`, and writes
+`<slug>-publish.md` with internal provenance tags removed. Never publish the
+working draft.
+
+Then hand over: the sourced draft, the clean publish copy, every SVG + PNG,
+`brief.md`, and `lint-report.txt`.
 
 ## Gotchas
 
