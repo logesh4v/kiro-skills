@@ -1,9 +1,9 @@
 # Example Co modernises claims intake on the AWS Cloud with Example Partner
 
-Example Co, an insurer, worked with Example Partner to move first notice of
-loss (FNOL) intake to the AWS Cloud. Documents land in Amazon Simple Storage
-Service (Amazon S3) and are processed by AWS Lambda. Between 1 January 2026
-and 30 June 2026 the system handled 12,345 claims.
+Example Co, an insurer, worked with Example Partner to move claims document
+intake to the AWS Cloud. Documents land in Amazon Simple Storage Service
+(Amazon S3) and are processed by AWS Lambda. Between 1 January 2026 and
+30 June 2026 the system handled 12,345 claims.
 
 ![Figure 1](figure-1.png)
 

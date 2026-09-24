@@ -15,8 +15,8 @@ FULL = {"Amazon S3": "Amazon Simple Storage Service (Amazon S3)",
         "Amazon SQS": "Amazon Simple Queue Service (Amazon SQS)",
         "Amazon SNS": "Amazon Simple Notification Service (Amazon SNS)",
         "Amazon EC2": "Amazon Elastic Compute Cloud (Amazon EC2)"}
-ACR = ["FNOL", "CORS", "SSE", "kNN", "OTP", "CVE", "CSV", "RAG", "CKYC", "IRDAI",
-       "VPC", "ALB", "IAM", "KMS", "OCR", "MRZ", "JWT"]
+ACR = ["ETL", "CORS", "SSE", "kNN", "OTP", "CVE", "CSV", "RAG", "SLA", "TLS",
+       "VPC", "ALB", "IAM", "KMS", "OCR", "DNS", "JWT"]
 LEAK = [(r"(?<![\d.])(?!(?:123456789012)\b)\d{12}(?![\d.])", "account id"),
         (r"arn:aws:[a-z0-9-]*:[a-z0-9-]*:(?!<|x|\$|1234)\d", "real ARN"),
         (r"\b\d{1,3}(\.\d{1,3}){3}/\d{1,2}\b", "CIDR"),
