@@ -189,7 +189,7 @@ or a client take minutes instead of days.
 Rules that apply to both genres:
 - Every AWS service in full on first mention — `Amazon Elastic Container Service (Amazon ECS)` — short form after.
 - Every acronym expanded on first use.
-- Numbers carry their window: not "6,591 users" but "6,591 users between 31 Dec and 20 Jul".
+- Numbers carry their window: not "10,000 users" but "10,000 users between 31 Dec and 20 Jul".
 - A metric that improved over time is stated as a trend with both endpoints.
 - No sentiment/feedback figure without saying what fraction of interactions were rated.
 - "Live" and "planned" never share a sentence.

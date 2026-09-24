@@ -42,11 +42,11 @@ exempt.
 
 ## Numbers
 
-- Thousands separators: 1,319,134
-- Percentages to two decimals if the source has them: 0.52%
+- Thousands separators: 1,234,567
+- Percentages to two decimals if the source has them: 0.45%
 - Every figure carries its window: "between 31 December 2025 and 21 September 2026"
-- Improvements as trends with both endpoints: "fell from 0.73% to 0.52%"
-- Ranges with an en dash: 15,500–16,500
+- Improvements as trends with both endpoints: "fell from 0.90% to 0.45%"
+- Ranges with an en dash: 15,000–16,000
 - Dates: 21 September 2026 (day month year, no ordinal)
 
 ## Vocabulary
