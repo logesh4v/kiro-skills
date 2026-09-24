@@ -37,7 +37,7 @@ AWS" on first mention. Model names as the provider writes them:
 ## Acronyms
 
 Expand on first use, acronym in parentheses, acronym thereafter. Includes the
-ones everyone knows: FNOL, CORS, SSE, kNN, OTP, CVE, CSV, RAG, SDK, API is
+ones everyone knows: ETL, CORS, SSE, kNN, OTP, CVE, CSV, RAG, SDK, API is
 exempt.
 
 ## Numbers

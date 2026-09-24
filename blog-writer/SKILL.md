@@ -3,7 +3,7 @@ name: blog-writer
 description: Write any evidence-based AWS technical blog end to end — build story, tutorial, architecture deep dive, migration, performance/cost, incident lesson, comparison, Builder Center, APN or partner case study — with topology-correct diagrams. Gathers facts from code, checks current AWS docs and all six Well-Architected pillars, interviews the author, selects from eight diagram patterns using the complete official AWS service/resource icon corpus, traces every claim to evidence, and blocks unsupported claims.
 license: Apache-2.0
 metadata:
-  author: ShellKode
+  author: logesh4v
   version: 0.2.0
   genres: builder-center, partner-apn
 ---
@@ -77,7 +77,7 @@ code will swamp every count with false hits.
 3. `read` the entry points, the orchestrator, the component declaration, and
    the IaC stacks. Confirm every grep hit against the code that uses it.
 4. Write the fact sheet into `brief.md` under `## Fact sheet (from code)`.
-   Every line cites a path: `- 7 agents — infra/kyc/config.py:184 (AGENTS tuple)`.
+   Every line cites a path: `- 7 agents — infra/<stack>/config.py:120 (AGENTS tuple)`.
 
 If NO codebase: say so plainly, write `## Fact sheet: none — author's account only`,
 and every technical claim later carries `[VERIFY: no code]`. Do not soften this.

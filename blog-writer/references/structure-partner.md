@@ -9,7 +9,7 @@ channel this skill targets.
 if the technical depth earns it — say so to the AWS reviewer rather than
 cutting the strongest section. Above 2,000 will be sent back.
 
-**Voice:** "SBIGI partnered with AWS and ShellKode to…", "the orchestrator
+**Voice:** "<Customer> partnered with AWS and <Partner> to…", "the orchestrator
 agent delegates…". Never "I" or "we built". Present tense for what is live.
 
 ## Hard constraints (fail the review if violated)
